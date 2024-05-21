@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section id="home">
+            <h1>Welcome to Our Website</h1>
+            <p>This project showcases an interactive navigation menu that changes color when scrolled or when hovering over a menu item.</p>
+            <button onclick="window.location.href='#services'">Discover Our Services</button>
+        </section>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our company has been a leader in the industry for over a decade. We specialize in providing innovative solutions that drive success. Our team of experts is dedicated to delivering exceptional value and quality in every project.</p>
+            <p>Our mission is to empower our clients with the tools and knowledge they need to succeed in their respective fields. We believe in building long-term relationships based on trust, integrity, and mutual respect.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of services to meet the diverse needs of our clients. Our key services include:</p>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="./ICON/8123530.png" alt="Consulting">
+                    <h3>Consulting</h3>
+                    <p>Providing expert advice to help you make informed decisions.</p>
+                </div>
+                <div class="service-item">
+                    <img src="./ICON/4661361.png" alt="Project Management">
+                    <h3>Project Management</h3>
+                    <p>Ensuring your projects are completed on time and within budget.</p>
+                </div>
+                <div class="service-item">
+                    <img src="./ICON/4230745.png" alt="Technical Support">
+                    <h3>Technical Support</h3>
+                    <p>Offering reliable and efficient technical assistance.</p>
+                </div>
+                <div class="service-item">
+                    <img src="./ICON/9084544.png" alt="Custom Solutions">
+                    <h3>Custom Solutions</h3>
+                    <p>Developing tailored solutions to meet your specific requirements.</p>
+                </div>
+            </div>
+            <button onclick="window.location.href='#contact'">Get in Touch</button>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more about our services, please feel free to reach out to us. We look forward to hearing from you!</p>
+            <p><strong>Email:</strong> <a href="mailto:abhaykrdhanbad1@gmail.com" style="text-decoration: none;color:brown;">abhaykrdhanbad1@gmail.com</a></p>
+            <p><strong>Phone:</strong><a href="Add tel:6207721809" style="text-decoration: none;color: brown;">6207721809</a></p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
